@@ -1,4 +1,6 @@
 const sumAll = function (min, max) {
+  
+  // Zastosowanie !Number.isInteger(argument) dziala na ostatnie 3 problemy jednoczesnie z racji tego ze dokladnie sprawdza czy rzeczywiscie argument jest liczba calkowita.
   if (!Number.isInteger(min) || !Number.isInteger(max)) return "ERROR";
   if (min < 0 || max < 0) return "ERROR";
   if (min > max) {
